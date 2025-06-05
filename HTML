@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Your favourite music is here </title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li class="brand"><img src="spotifilogo.png" alt="spotifilogo">spotify</li>
+            <li>Home</li>
+            <li>About</li>
+            <li><a href="login.html" style="color: white; text-decoration: none;">Login</a></li>
+            <input  type="search" placeholder="search your music here">
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Best of NCS- No Copyright Sounds</h1>
+        <div class="songItemcontainer">
+            <div class="songItem">
+                <img src="images/ayare.jpg" alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestam">5:34 <i id="0" class="songItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="images/gorihai.jpg" alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestam">5:34 <i id="1" class="songItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="images/ladki.jpg" alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestam">5:34 <i id="2" class="songItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="images/nasha.jpg" alt="1">
+                <span class="songName">Let me Love You</span>
+                <span class="songlistplay"><span class="timestam">5:34 <i id="3" class="songItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            
+        </div>
+        <div class="songList"></div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icon">
+            
+             <i class="songItemsPlay fas fa-3x fa-step-backward" id="previous"></i>
+             <i class="songItemsPlay fas fa-3x fa-solid fa-play-circle" id="masterPlay"></i>
+             <i class="songItemsPlay fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songinfo">
+            <img src="sound-8825_128.gif" width="42px" id="gif"> <span id="masterSongName"></span> Aaya Re Toofan
+        </div>
+    </div>
+
+    <div class="TrendingSong">
+        <h1 class="trend" >Trending Song</h1>
+        <br>
+        <div class="Songs">
+            <div class="TrendSongs">
+                <div class="image-wrapper">
+                    <img class="SongImg" src="supreme.jpeg">
+                    <div class="overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </div>
+                Supreme
+            </div>
+        
+            <div class="TrendSongs">
+                <div class="image-wrapper">
+                    <img class="SongImg" src="nasha2.jpeg">
+                    <div class="overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </div>
+                Nasha (From "Raid")
+            </div>
+        
+            <div class="TrendSongs">
+                <div class="image-wrapper">
+                    <img class="SongImg" src="chorbazari.jpeg">
+                    <div class="overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </div>
+                Chor Bazari Phir Se
+            </div>
+
+            <div class="TrendSongs">
+                <div class="image-wrapper">
+                    <img class="SongImg" src="palpal.jpeg">
+                    <div class="overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </div>
+                Pal Pal
+            </div>
+
+            <div class="TrendSongs">
+                <div class="image-wrapper">
+                    <img class="SongImg" src="samjahwa.jpeg">
+                    <div class="overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </div>
+                Samjhawan
+            </div>
+
+            <div class="TrendSongs">
+                <div class="image-wrapper">
+                    <img class="SongImg" src="qutal.jpeg">
+                    <div class="overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </div>
+                Qatal
+            </div>
+
+
+
+        </div>
+        
+        <div class="TrendingSong">
+            <h1 class="trend">Popular artists</h1>
+            <br>
+            <div class="ArtistSongs">
+                <div class="TrendArtist">
+                    <a href="pritam.html" class="artist-link">
+                        <div class="image-wrapper">
+                            <img class="ArtistImg" src="pritam.jpeg">
+                            <div class="overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        Pritam
+                    </a>
+                </div>
+        
+                <div class="TrendArtist">
+                    <a href="arjit.html" class="artist-link">
+                        <div class="image-wrapper">
+                            <img class="ArtistImg" src="arijit.jpeg">
+                            <div class="overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                    </a>
+                    Arijit Singh
+                </div>
+        
+                <div class="TrendArtist">
+                    <a href="arahaman.html" class="artist-link">
+                        <div class="image-wrapper">
+                            <img class="ArtistImg" src="arraha.jpeg">
+                            <div class="overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        A.R. Rahman
+                    </a>
+                </div>
+        
+                <div class="TrendArtist">
+                    <a href="atif.html" class="artist-link">
+                    <div class="image-wrapper">
+                        <img class="ArtistImg" src="atif.jpeg">
+                        <div class="overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        Atif Aslam
+                     </a>
+                    </div>
+                    
+                </div>
+
+                <div class="TrendArtist">
+                    <a href="anirudh.html" class="artist-link">
+                        <div class="image-wrapper">
+                            <img class="ArtistImg" src="anirudh.jpeg">
+                            <div class="overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        Anirudha Ravichander
+                    </a>
+                </div>
+
+                <div class="TrendArtist">
+                    <a href="udit.html" class="artist-link">
+                        <div class="image-wrapper">
+                            <img class="ArtistImg" src="udot.jpeg">
+                            <div class="overlay">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                        Udit Narayan
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="classes">Company
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">For the Record</a></li>
+                </ul>
+            </div>
+            <div class="classes">Communities
+                <ul>
+                    <li class="point"><a class="duo" href="#">For Artist</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Adivertising</a></li>
+                    <li><a href="#">Investor</a></li>
+                    <li><a href="#">Vendor</a></li>
+                </ul>
+            </div>
+            <div class="classes">Useful Link
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Free Mobile App</a></li>
+                </ul>
+            </div>
+            <div class="classes">Spotify Plans
+                <ul>
+                    <li><a href="#">Premium Individual</a></li>
+                    <li><a href="#">Premium Duo</a></li>
+                    <li><a href="#">Premium Family</a></li>
+                    <li><a href="#">Premium Student</a></li>
+                    <li><a href="#">Spotify Free</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    
+
+    <script src="spotify.js"></script>
+    <script src="https://kit.fontawesome.com/1e57354d6c.js" crossorigin="anonymous"></script>
+</body>
+</html>
